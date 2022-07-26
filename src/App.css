@@ -1,38 +1,64 @@
+@font-face {
+  font-family: pokeFont;
+  src: url(Kanit-Regular.ttf);
+}
+
+
 .App {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  flex-direction: column;
+  font-family: pokeFont;
+  font-size: 25px;
+}
+.pokeH1 {
+  margin-top: 0px;
+  padding-bottom: 50px;
+}
+body {
+  margin: 0%;
+  padding: 0%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Title {
+  background-color: #5f739e;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: White;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title input {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #5f739e;
+  border-radius: 10px;
+  font-size: 19px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Title button {
+  width: 200px;
+  height: 70px;
+  border: 1px solid #5f739e;
+  border-radius: 10px;
+  font-size: 19px;
+  color: white;
+  background-color: #006cbf;
+}
+.displayPokemon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.displayPokemon h3, h4 {
+  margin: 0;
+}
+.displayPokemon img {
+  width: 200px;
+  height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
